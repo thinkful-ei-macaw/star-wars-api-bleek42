@@ -1,25 +1,25 @@
-// import React, { Component } from 'react';
-// import SearchFilters from './SearchFilters;'
+import React, { Component } from 'react';
 
-// export class Results extends Component {
-//     constructor(props) {
-//             super(props);
-//             this.state = {
-//                 query: '',
-//                 results: {},
-//                 loading: false,
-//                 message: ''
-//             }
-//         }
-//     }
+class Results extends Component {
 
-//     render() {
-//         return (
-//             <div>
-//                <h1>Placeholder</h1> 
-//             </div>
-//         )
-//     }
-// }
+    state = {
+        searchResult: [],
+        loading: false
+    }
 
-// export default Results;
+    render() {
+
+        return (
+            <div>
+                <ul className="results">
+                    {/*{searchResult.map(result => (
+                        <li>{ }</li>
+                    ))}*/}
+                </ul>
+            </div>
+        )
+    }
+
+}
+
+export default Results;

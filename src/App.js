@@ -1,16 +1,23 @@
-import React from 'react';
-import Search from './components/Search';
-import SearchFilters from './components/SearchFilters';
+import React, { Component } from 'react';
 import Results from './components/Results';
+import Search from './components/Search';
 
 
-function App() {
-  return (
+class App extends Component {
+
+  state = {
+    results: [],
+    loading: false
+  }
+
+  render() {
+    return (
     <div className="App">
       <Search />
-      <SearchFilters />
+      <Results />
     </div>
-  );
+  )}
+  
 }
 
 export default App;
